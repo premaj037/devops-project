@@ -1,0 +1,605 @@
+import time
+c1=0
+c2=0
+c3=0
+c4=0
+c5=0
+s1=0
+s2=0
+s3=0
+s4=0
+s5=0
+print("\nPYTHON QUIZ APPLICATION\n")
+name = input("Enter your name:")
+print("\nHello " + name + "! Best of Luck!\n")
+time.sleep(2)
+print("The game is about to start!\n\n Let's play Quiz!\n")
+time.sleep(3)
+
+class level1:
+  def f1(self):
+    global s1
+    global c1
+    print("\nLEVEL 1:DATA TYPES\n")
+    print("Q1:Which of the following are immutable?")
+    print("a)Number")
+    print("b)String")
+    print("c)Tuple")
+    print("d)All the above")
+    op=input("\nEnter your option:")
+    if op=='d':
+      s1=s1+10
+      c1=c1+1
+      print("\nCorrect Answer!!\n")
+    else:
+      print("\nWrong Answer!!")
+      print("Correct Answer:d)All the above\n")  
+    print("Q2:What is true about complex numbers?")
+    print("a)The real and imaginary component can be float ")
+    print("b)The real part should be an integer")
+    print("c)Scientific notation cannot be used in complex number")
+    print("d)All of above")
+    op=input("\nEnter your option:")
+    if op=='a':
+      s1=s1+10
+      c1=c1+1
+      print("\nCorrect Answer!!\n")
+    else:
+      print("\nWrong Answer!!")
+      print("Correct Answer:a)The real and imaginary component can be float\n")
+    print("Q3:What is the value of following arithmetic expression 5*2**10?")
+    print("a)100")
+    print("b)5120")
+    print("c)10000000000")
+    print("d)None of the above")
+    op=input("\nEnter your option:")
+    if op=='b':
+      s1=s1+10
+      c1=c1+1
+      print("\nCorrect Answer!!\n")
+    else:
+      print("\nWrong Answer!!")
+      print("Correct Answer:b)5120\n")
+    print("Q4:Which of the following is true?")
+    print("a)9%2=4")
+    print("b)9//2=4")
+    print("c)9/2=4")
+    print("d)None of the above")
+    op=input("\nEnter your option:")
+    if op=='b':
+      s1=s1+10
+      c1=c1+1
+      print("\nCorrect Answer!!\n")
+    else:
+      print("\nWrong Answer!!")
+      print("Correct Answer:b)9//2=4\n")
+    print("Q5:Which of the following is not a valid integer in python?")
+    print("a)0o123 ")
+    print("b)123")
+    print("c)0123")
+    print("d)0x123")
+    op=input("\nEnter your option:")
+    if op=='c':
+      s1=s1+10
+      c1=c1+1
+      print("\nCorrect Answer!!\n")
+    else:
+      print("\nWrong Answer!!")
+      print("Correct Answer:c)0123\n")
+    print("Q6:Which the following is true?")
+    print("a)Modulus operation (%) always return an integer")
+    print("b)Floor division (//) always returns an integer")
+    print("c)None of the above")
+    op=input("\nEnter your option:")
+    if op=='b':
+      s1=s1+10
+      c1=c1+1
+      print("\nCorrect Answer!!\n")
+    else:
+      print("\nWrong Answer!!")
+      print("Correct Answer:b)Floor division (//) always returns an integer\n")
+    print("Q7:What will be the output of the following program? x='X' y='X' print(x is y) ")
+    print("a)False")
+    print("b)True")
+    print("c)0")
+    print("d)1")
+    op=input("\nEnter your option:")
+    if op=='d':
+      s1=s1+10
+      c1=c1+1
+      print("\nCorrect Answer!!\n")
+    else:
+      print("\nWrong Answer!!")
+      print("Correct Answer:b)True\n")
+    print("Q8:Which of the following are valid complex number objects? ")
+    print("a)4+5j")
+    print("b)5j+4 ")
+    print("c)0j")
+    print("d)5+4")
+    op=input("\nEnter your answer:")
+    if op=='a' or op=='b' or op=='c':
+      s1=s1+10
+      c1=c1+1
+      print("\nCorrect Answer!!\n")
+    else:
+      print("\nWrong Answer!!")
+      print("Correct Answer:4+5j/5j+4/0j\n")
+
+class level2:
+  def f2(self):
+    global s2
+    global c2
+    print("\nLEVEL 2:CONTROL FLOW\n")
+    print("Q1:Python executes one statement after another form begining to the end of the program.This is  a____")
+    print("a)Selection Construct")
+    print("b)Sequential Construct")
+    print("c)Iteration Construct ")
+    print("d)None of the above ")
+    op=input("\nEnter your option:")
+    if op=='b':
+      s2=s2+10
+      c2=c2+1
+      print("\nCorrect Answer!!\n")
+    else:
+      print("\nWrong Answer!!")
+      print("Correct Answer:b)Sequential Construct\n")  
+    print("Q2:Python supports_____types of control structures. ")
+    print("a)1")
+    print("b)2")
+    print("c)3")
+    print("d)4")
+    op=input("\nEnter your option:")
+    if op=='b':
+      s2=s2+10
+      c2=c2+1
+      print("\nCorrect Answer!!\n")
+    else:
+      print("\nWrong Answer!!")
+      print("Correct Answer:b)2\n")
+    print("Q3:An 'if' condition inside another 'if' is called")
+    print("a)Second if")
+    print("b)nested if")
+    print("c)another if")
+    print("d)None of the above")
+    op=input("\nEnter your option:")
+    if op=='b':
+      s2=s2+10
+      c2=c2+1
+      print("\nCorrect Answer!!\n")
+    else:
+      print("\nWrong Answer!!")
+      print("Correct Answer:b)nested if\n")
+    print("Q4:Write the output of the following code: if True:  print('Hello') else: print('Bye')")
+    print("a)Bye")
+    print("b)Hello")
+    op=input("\nEnter your option:")
+    if op=='b':
+      s2=s2+10
+      c2=c2+1
+      print("\nCorrect Answer!!\n")
+    else:
+      print("\nWrong Answer!!")
+      print("Correct Answer:b)Hello\n")
+    print("Q5:____is an empty statement in python.")
+    print("a)Jump")
+    print("b)Fail")
+    print("c)Empty")
+    print("d)Pass")
+    op=input("\nEnter your option:")
+    if op=='d':
+      s2=s2+10
+      c2=c2+1
+      print("\nCorrect Answer!!\n")
+    else:
+      print("\nWrong Answer!!")
+      print("Correct Answer:d)Pass\n")
+    print("Q6:if-elif statement is used in situation which involves")
+    print("a)Multiple condition")
+    print("b)Exactly one condition")
+    print("c)Both of the above")
+    print("d)None of the above")
+    op=input("\nEnter your option:")
+    if op=='a':
+      s2=s2+10
+      c2=c2+1
+      print("\nCorrect Answer!!\n")
+    else:
+      print("\nWrong Answer!!")
+      print("Correct Answer:a)Multiple condition\n")
+    print("Q7:Which of the following is not a keyword in python?")
+    print("a)True")
+    print("b)False")
+    print("c)if")
+    print("d)For")
+    op=input("\nEnter your option:")
+    if op=='d':
+      s2=s2+10
+      c2=c2+1
+      print("\nCorrect Answer!!\n")
+    else:
+      print("\nWrong Answer!!")
+      print("Correct Answer:d)For\n")
+    print("Q8:Which of the following symbol is used to end an 'if' statement in python?")
+    print("a)Comma(,)")
+    print("b)Colon(:)")
+    print("c)Semi Colon(;)")
+    print("d)None of the above")
+    op=input("\nEnter your answer:")
+    if op=='b':
+      s2=s2+10
+      c2=c2+1
+      print("\nCorrect Answer!!\n")
+    else:
+      print("\nWrong Answer!!")
+      print("Correct Answer:b)Colon(:)\n")
+    print("Total questions:8")
+
+class level3:  
+  def f3(self):
+    global s3
+    global c3
+    print("\nLEVEL 3:FUNCTIONS\n")
+    print("Q1:Which keyword is used for function?")
+    print("a)Fun")
+    print("b)Define")
+    print("c)Def")
+    print("d)Function")
+    op=input("\nEnter your option:")
+    if op=='c':
+      s3=s3+10
+      c3=c3+1
+      print("\nCorrect Answer!!\n")
+    else:
+      print("\nWrong Answer!!")
+      print("Correct Answer:c)Def\n")  
+    print("Q2:Where is function defined?")
+    print("a)Module")
+    print("b)Class")
+    print("c)Another function")
+    print("d)All of the mentioned")
+    op=input("\nEnter your option:")
+    if op=='d':
+      s3=s3+10
+      c3=c3+1
+      print("\nCorrect Answer!!\n")
+    else:
+      print("\nWrong Answer!!")
+      print("Correct Answer:d)All of the mentioned\n")
+    print("Q3:Which are the advantages of functions in python?")
+    print("a)Reducing duplication of code")
+    print("b)Decomposing complex problems into simpler pieces")
+    print("c)Improving clarity of the code")
+    print("d)All of the mentioned")
+    op=input("\nEnter your option:")
+    if op=='d':
+      s3=s3+10
+      c3=c3+1
+      print("\nCorrect Answer!!\n")
+    else:
+      print("\nWrong Answer!!")
+      print("Correct Answer:d)All of the mentioned\n")
+    print("Q4:What will be the output of the following Python code?y = 6 z = lambda x: x * y print z(8)")
+    print("a)48")
+    print("b)14")
+    print("c)64")
+    print("d)None of the mentioned")
+    op=input("\nEnter your option:")
+    if op=='a':
+      s3=s3+10
+      c3=c3+1
+      print("\nCorrect Answer!!\n")
+    else:
+      print("\nWrong Answer!!")
+      print("Correct Answer:a)48\n")
+    print("Q5:What is a variable defined inside a function referred to as?")
+    print("a)A global variable")
+    print("b)A volatile variable")
+    print("c)A local variable")
+    print("d)An automatic variable")
+    op=input("\nEnter your option:")
+    if op=='c':
+      s3=s3+10
+      c3=c3+1
+      print("\nCorrect Answer!!\n")
+    else:
+      print("\nWrong Answer!!")
+      print("Correct Answer:c)A local variable\n")
+    print("Q6:What will be the output of the following Python code? fn=lambda x:x*x print(fn(4))")
+    print("a)4")
+    print("b)8")
+    print("c)16")
+    print("d)Error")
+    op=input("\nEnter your option:")
+    if op=='c':
+      s3=s3+10
+      c3=c3+1
+      print("\nCorrect Answer!!\n")
+    else:
+      print("\nWrong Answer!!")
+      print("Correct Answer:c)16\n")
+    print("Q7:What will be the output of the following Python code? def display(x,y,z):  print(x,y,z) t1=(1,2,3) display(*t1)")
+    print("a)(1,2,3),0,0")
+    print("b)(1,2,3)")
+    print("c)1 2 3")
+    print("d)syntax error")
+    op=input("\nEnter your option:")
+    if op=='c':
+      s3=s3+10
+      c3=c3+1
+      print("\nCorrect Answer!!\n")
+    else:
+      print("\nWrong Answer!!")
+      print("Correct Answer:c)1 2 3\n")
+    print("Q8:In python,global is a")
+    print("a)Built-in-function")
+    print("b)keyword")
+    print("c)None")
+    print("d)Built-in-module")
+    op=input("\nEnter your answer:")
+    if op=='b':
+      s3=s3+10
+      c3=c3+1
+      print("\nCorrect Answer!!\n")
+    else:
+      print("\nWrong Answer!!")
+      print("Correct Answer:b)keyword\n")
+
+class level4:
+  def f4(self):
+    global s4
+    global c4
+    print("\nLEVEL 4:OBJECT ORIENTED CONCEPTS\n")
+    print("Q1:In Python, a class is ___________ for a concrete object?")
+    print("a)a blueprint")
+    print("b)an instance")
+    print("c)a nuisance")
+    print("d)a distraction")
+    op=input("\nEnter your option:")
+    if op=='a':
+      s4=s4+10
+      c4=c4+1
+      print("\nCorrect Answer!!\n")
+    else:
+      print("\nWrong Answer!!")
+      print("Correct Answer:a)a blueprint\n")  
+    print("Q2:Object and class attributes are accessed using ___________ notation in Python.")
+    print("a)method")
+    print("b)factory")
+    print("c)class function")
+    print("d)callable")
+    op=input("\nEnter your option:")
+    if op=='a':
+      s4=s4+10
+      c4=c4+1
+      print("\nCorrect Answer!!\n")
+    else:
+      print("\nWrong Answer!!")
+      print("Correct Answer:a)method\n")
+    print("Q3:What are the main features of OOPs?")
+    print("a)Inheritance")
+    print("b)Encapsulation")
+    print("c)Polymorphism")
+    print("d)All the above")
+    op=input("\nEnter your option:")
+    if op=='d':
+      s4=s4+10
+      c4=c4+1
+      print("\nCorrect Answer!!\n")
+    else:
+      print("\nWrong Answer!!")
+      print("Correct Answer:d)All the above\n")
+    print("Q4:To create an object ______ is used.")
+    print("a)class")
+    print("b)constructor")
+    print("c)user defined functions")
+    print("d)built in functions")
+    op=input("\nEnter your option:")
+    if op=='b':
+      s4=s4+10
+      c4=c4+1
+      print("\nCorrect Answer!!\n")
+    else:
+      print("\nWrong Answer!!")
+      print("Correct Answer:b)constructor\n")
+    print("Q5:____ represents an entity in the real world with its identity and behaviour.")
+    print("a)object")
+    print("b)class")
+    print("c)Method")
+    print("d)operator")
+    op=input("\nEnter your option:")
+    if op=='a':
+      s4=s4+10
+      c4=c4+1
+      print("\nCorrect Answer!!\n")
+    else:
+      print("\nWrong Answer!!")
+      print("Correct Answer:a)object\n")
+    print("Q6:Identify the feature which can be implemented using encapsulation?")
+    print("a)Abstraction")
+    print("b)Inheritance")
+    print("c)Encapsulation")
+    print("d)Polymorphism")
+    op=input("\nEnter your option:")
+    if op=='a':
+      s4=s4+10
+      c4=c4+1
+      print("\nCorrect Answer!!\n")
+    else:
+      print("\nWrong Answer!!")
+      print("Correct Answer:a)Abstraction\n")
+    print("Q7:Identify the scope resolution operator?")
+    print("a):")
+    print("b)::")
+    print("c)?:")
+    print("d)None")
+    op=input("\nEnter your option:")
+    if op=='b':
+      s4=s4+10
+      c4=c4+1
+      print("\nCorrect Answer!!\n")
+    else:
+      print("\nWrong Answer!!")
+      print("Correct Answer:b)::\n")
+    print("Q8:Object and class attributes are accessed using ___________ notation in Python.")
+    op=input("\nEnter your answer:")
+    if op=='dot':
+      s4=s4+10
+      c4=c4+1
+      print("\nCorrect Answer!!\n")
+    else:
+      print("\nWrong Answer!!")
+      print("Correct Answer:dot\n")
+
+class level5:
+  def f5(self):
+    global s5
+    global c5
+    print("\nLEVEL 5:COLLECTIONS\n")
+    print("Q1:Which of the following built-in data structures are not given the option to modify their properties?")
+    print("a)String")
+    print("b)Dictionary")
+    print("c)Tuple")
+    print("d)List")
+    op=input("\nEnter your option:")
+    if op=='c':
+      s5=s5+10
+      c5=c5+1
+      print("\nCorrect Answer!!\n")
+    else:
+      print("\nWrong Answer!!")
+      print("Correct Answer:c)Tuple\n")  
+    print("Q2:Which of the following is not a data structure that is in the form of a dictionary?")
+    print("a)DefaultDict")
+    print("b)OrderedDict")
+    print("c)Counters")
+    print("d)DeQue")
+    op=input("\nEnter your option:")
+    if op=='d':
+      s5=s5+10
+      c5=c5+1
+      print("\nCorrect Answer!!\n")
+    else:
+      print("\nWrong Answer!!")
+      print("Correct Answer:d)DeQue\n")
+    print("Q3:Find the correct way to import the required module to use the ChainMap?")
+    print("a)import collection")
+    print("b)import collections")
+    op=input("\nEnter your option:")
+    if op=='b':
+      s5=s5+10
+      c5=c5+1
+      print("\nCorrect Answer!!\n")
+    else:
+      print("\nWrong Answer!!")
+      print("Correct Answer:b)import collections\n")
+    print("Q4:Which of the following is mutable?")
+    print("a)List")
+    print("b)Tuple")
+    print("c)String")
+    print("d)set")
+    op=input("\nEnter your option:")
+    if op=='a' or op=='d': 
+      s5=s5+10
+      c5=c5+1
+      print("\nCorrect Answer!!\n")
+    else:
+      print("\nWrong Answer!!")
+      print("Correct Answer:List/set\n")
+    print("Q5:The list_pop() function will?")
+    print("a)remove the first element from list")
+    print("b)remove the last element from list")
+    print("c)none will be removed")
+    print("d)both will be removed")
+    op=input("\nEnter your option:")
+    if op=='b':
+      s5=s5+10
+      c5=c5+1
+      print("\nCorrect Answer!!\n")
+    else:
+      print("\nWrong Answer!!")
+      print("Correct Answer:b)remove the last element from list\n")
+    print("Q6:What will be the output of the following code?lst=[1,2,3,4,5] print(lst[-5:-3])")
+    print("a)[1,2]")
+    print("b)[]")
+    print("c)[2,3]")
+    print("d)syntax error")
+    op=input("\nEnter your option:")
+    if op=='a':
+      s5=s5+10
+      c5=c5+1
+      print("\nCorrect Answer!!\n")
+    else:
+      print("\nWrong Answer!!")
+      print("Correct Answer:a)[1,2]\n")
+    print("Q7:which of the following cannot be used with tuple?")
+    print("a)index()")
+    print("b)insert()")
+    print("c)count()")
+    print("d)None of these")
+    op=input("\nEnter your option:")
+    if op=='b':
+      s5=s5+10
+      c5=c5+1
+      print("\nCorrect Answer!!\n")
+    else:
+      print("\nWrong Answer!!")
+      print("Correct Answer:b)insert()\n")
+    print("Q8:Which of the following is the right way to add the item at the starting to the following Queue?")
+    print("a)dQue=deque([‘a’,’b’,’c’])")
+    print("b)dQue.appendleft('t')")
+    print("c)dQue.append('t', last=False)")
+    print("d)dQue.extendleft('t')")
+    op=input("\nEnter your answer:")
+    if op=='a':
+      s5=s5+10
+      c5=c5+1
+      print("\nCorrect Answer!!\n")
+    else:
+      print("\nWrong Answer!!")
+      print("Correct Answer:a)dQue=deque([‘a’,’b’,’c’])\n")
+
+while True:
+  o1=level1()
+  o1.f1()
+  if c1>=5:
+    print("\nHurray!!!You have completed 1st level!!")
+    print("\nContinue with the same power!!")
+  else:
+    print("\nSorry!!You have lost!!")
+    break
+  o2=level2()
+  o2.f2()
+  if c2>=5:
+    print("\nHurray!!!You have completed 2nd level!!")
+    print("\nContinue with the same power!!")
+  else:
+    print("\nSorry!!You have lost!!")
+    break
+  o3=level3()
+  o3.f3()
+  if c3>=5:
+    print("\nHurray!!!You have completed 3rd level!!")
+    print("\nContinue with the same power!!")
+  else:
+    print("\nSorry!!You have lost!!")
+    break
+  o4=level4()
+  o4.f4()
+  if c4>=5:
+    print("\nHurray!!!You have completed 4th level!!")
+    print("\nContinue with the same power!!")
+  else:
+    print("\nSorry!!You have lost!!")
+    break
+  o5=level5()
+  o5.f5()
+  if c5>=5:
+    print("\nHurray!!!You have completed 5th level!!")
+    print("\nContinue with the same power!!")
+  else:
+    print("\nSorry!!You have lost!!")
+    break
+score=s1+s2+s3+s4+s5
+print("\n\nYour total score:",score)
+print("\n*******************************************************************************************\n")
+print("Thanks for playing!!We expect you back again!")
